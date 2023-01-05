@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js while loop</title>
+    <style>
+        #myid{
+            color:red;
+            font-weight:lighter;
+            font-size: larger;
+            font-style: italic;
+        }
+    </style>
+    <script>
+            // i can write js code before the clossing of head tag
+    </script>
+</head>
+
+<body>
+    <ul id="myid">
+    </ul>
+
+    <script>
+        // I can write js code before the clossing of body tag
+        let myid = document.getElementById("myid");
+        console.log(myid);
+        let name = prompt('Enter your name'); //  enter the user name
+        let sname = prompt('Enter your surname'); //  enter the user surname
+        let ntime = prompt('number of times greet');//how many time you want to greet 
+
+        //type  casting or type conversion
+        // there are 2 type type casting
+        //string-->Number
+        ntime = parseInt(ntime)
+        console.log(name);
+          //console.log(typeof ntime);
+        /*
+          while (condition) {
+          // code block to be executed
+          }
+        */
+
+        let x=1;
+          while(x<=ntime){
+            console.log(`Hello ${name} ${sname} Goodmorning Have A Great day !`);
+            myid.innerHTML+=`<li>Hello ${name} ${sname} Goodmorning Have A Great day !</li>`;
+            x++; // this is a postfix increament Operator
+        }
+
+    </script>
+</body>
+
+</html>
